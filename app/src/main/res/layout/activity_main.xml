@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="3dp">
+            <Button
+                android:layout_height="100dp"
+                android:layout_width="100dp"
+                android:onClick="playSound1"
+                android:background="@drawable/blue_button">
+            </Button>
+            <Button
+                android:layout_height="100dp"
+                android:layout_width="100dp"
+                android:onClick="playSound2"
+                android:background="@drawable/purple_button"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp">
+            </Button>
+            <Button
+                android:layout_height="100dp"
+                android:layout_width="100dp"
+                android:onClick="playSound3"
+                android:background="@drawable/blue_button">
+            </Button>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_height="100dp"
+                android:layout_width="100dp"
+                android:onClick="playSound4"
+                android:background="@drawable/purple_button">
+            </Button>
+            <Button
+                android:layout_height="100dp"
+                android:layout_width="100dp"
+                android:onClick="playSound5"
+                android:background="@drawable/blue_button"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp">
+            </Button>
+            <Button
+                android:layout_height="100dp"
+                android:layout_width="100dp"
+                android:onClick="playSound6"
+                android:background="@drawable/purple_button">
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
