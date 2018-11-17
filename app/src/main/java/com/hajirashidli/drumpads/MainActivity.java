@@ -35,6 +35,13 @@ public class MainActivity extends AppCompatActivity {
     private int sound555;
     private int sound666;
 
+    private Button spButton1;
+    private Button spButton2;
+    private Button spButton3;
+    private Button spButton4;
+    private Button spButton5;
+    private Button spButton6;
+
     private int soundKit = 1;
 
 
@@ -69,6 +76,28 @@ public class MainActivity extends AppCompatActivity {
         sound444 = sp.load(this, R.raw.sound444,1);
         sound555 = sp.load(this, R.raw.sound555,1);
         sound666 = sp.load(this, R.raw.sound666,1);
+
+        Button spButton1 = findViewById(R.id.spButtonId1);
+        Button spButton2 = findViewById(R.id.spButtonId2);
+        Button spButton3 = findViewById(R.id.spButtonId3);
+        Button spButton4 = findViewById(R.id.spButtonId4);
+        Button spButton5 = findViewById(R.id.spButtonId5);
+        Button spButton6 = findViewById(R.id.spButtonId6);
+
+        spButton1.setSoundEffectsEnabled(false);
+        spButton2.setSoundEffectsEnabled(false);
+        spButton3.setSoundEffectsEnabled(false);
+        spButton4.setSoundEffectsEnabled(false);
+        spButton5.setSoundEffectsEnabled(false);
+        spButton6.setSoundEffectsEnabled(false);
+
+        ImageView kitButton1 = findViewById(R.id.kitButtonId1);
+        ImageView kitButton2 = findViewById(R.id.kitButtonId2);
+        ImageView kitButton3 = findViewById(R.id.kitButtonId3);
+
+        kitButton1.setSoundEffectsEnabled(false);
+        kitButton2.setSoundEffectsEnabled(false);
+        kitButton3.setSoundEffectsEnabled(false);
     }
 
     public void changeSoundKit1(View view)
